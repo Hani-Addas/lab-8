@@ -7,7 +7,7 @@ import random
 
 # Determine the path of the database
 script_dir = os.path.dirname(os.path.abspath(__file__))
-db_path = os.path.join(script_dir, 'social_network10.db')
+db_path = os.path.join(script_dir, 'social_network.db')
 
 def main():
     create_relationships_table()
