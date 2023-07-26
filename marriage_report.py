@@ -33,6 +33,17 @@ def get_married_couples():
     con.close()
 
     return married_couples
+
+def print_name_and_age(name_and_age_list):
+    """Prints name and age of all people in provided list
+
+    Args:
+        name_and_age_list (list): (name, age) of people
+    """
+    for person in name_and_age_list:
+        name, age = person
+        print(f"{name} is {age} years old.")
+        
 def save_married_couples_csv(married_couples, csv_path):
     """Saves list of married couples to a CSV file, including both people's 
     names and their wedding anniversary date.
